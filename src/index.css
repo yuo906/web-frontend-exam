@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans TC', 'Segoe UI', system-ui, sans-serif;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
