@@ -38,15 +38,13 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "autoprefixer": "^10.5.0",
     "eslint": "^8.56.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.5.5",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.1.1",
     "miragejs": "^0.1.48",
     "postcss": "^8.5.10",
     "prettier": "^3.8.3",

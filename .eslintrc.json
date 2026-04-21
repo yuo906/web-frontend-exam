@@ -1,12 +1,11 @@
 {
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
+    "react-app",
+    "react-app/jest",
     "google",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["react", "react-hooks", "prettier"],
+  "plugins": ["prettier"],
   "env": {
     "browser": true,
     "es2021": true
