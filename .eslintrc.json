@@ -1,11 +1,6 @@
 {
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "google",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": ["prettier"],
+  "extends": ["react-app", "react-app/jest", "google", "prettier"],
+  "plugins": [],
   "env": {
     "browser": true,
     "es2021": true
@@ -29,8 +24,7 @@
         "ignoreTemplateLiterals": true
       }
     ],
-    "object-curly-spacing": ["error", "always"],
-    "prettier/prettier": "error"
+    "object-curly-spacing": ["error", "always"]
   },
   "settings": {
     "react": {
