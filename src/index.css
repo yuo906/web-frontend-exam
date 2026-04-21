@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Noto Sans TC', 'Segoe UI', system-ui, sans-serif;
   color: #0f172a;
+  background: linear-gradient(to bottom, #5c5c5c, #868686);
 }
 
 * {

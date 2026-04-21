@@ -3,7 +3,10 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#0f766e',
+      main: '#E6E6E6',
+    },
+    grey: {
+      main: '#999999',
     },
     secondary: {
       main: '#ea580c',
@@ -14,9 +17,6 @@ const theme = createTheme({
     background: {
       default: '#f8fafc',
     },
-  },
-  shape: {
-    borderRadius: 18,
   },
   typography: {
     fontFamily: ['"Noto Sans TC"', '"Segoe UI"', 'system-ui', 'sans-serif'].join(','),
@@ -36,7 +36,21 @@ const theme = createTheme({
       lineHeight: 1.25,
     },
   },
-  components: {},
+  components: {
+    MuiChip: {
+      styleOverrides: {
+        sizeSmall: {
+          height: '18px',
+          fontSize: '10px',
+          '& .MuiChip-label': {
+            paddingLeft: 6,
+            paddingRight: 6,
+            lineHeight: '18px',
+          },
+        },
+      },
+    },
+  },
 });
 
 export default theme;

@@ -6,11 +6,12 @@ module.exports = {
       xs: '375px',
       sm: '480px',
       md: '768px',
-      lg: '976px',
+      lg: '1080px',
       xl: '1440px',
     },
     colors: {
       'orange-700': '#ee8927',
+      'gray-100': '#FFFFFF',
       'gray-300': '#E6E6E6',
       'gray-500': '#CCCCCC',
       'gray-600': '#B3B3B3',
@@ -22,16 +23,26 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        floating: '0 0 8px rgba(0, 0, 0, 0.35)',
+        floating: '2px 2px 4px rgba(0, 0, 0, 0.25)',
       },
       fontSize: {
         'body-2': ['14px', { lineHeight: '1.25' }],
         'body-3': ['16px', { lineHeight: '1.25' }],
+        'body-4': ['20px', { lineHeight: '1.25' }],
         'body-5': ['24px', { lineHeight: '1.25' }],
       },
       fontWeight: {
         regular: '400',
         bold: '700',
+      },
+      keyframes: {
+        zoomIn: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+        },
+      },
+      animation: {
+        zoomIn: 'zoomIn 1.5s infinite',
       },
     },
   },
