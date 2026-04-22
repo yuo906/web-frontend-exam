@@ -18,21 +18,26 @@ export default function ImageViewer({ images = [] }) {
   if (!hasImages) return null;
 
   return (
-    <div className="flex flex-col items-center gap-3">
-      <div className="w-[250px] h-[150px] overflow-hidden">
+    <div className="flex flex-col items-center gap-[10px]">
+      <div className="w-full h-[150px] overflow-hidden">
         <div
-          className="flex transition-transform duration-300"
+          className="flex gap-2 transition-transform duration-300"
           style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
+            transform: `translateX(-${currentIndex * 258}px)`,
           }}
         >
           {images.map((img, i) => (
-            <img key={i} src={img} className="w-[250px] h-[150px] object-contain flex-shrink-0" />
+            <img
+              key={i}
+              src={img}
+              alt={img + '-' + i}
+              className="w-[250px] h-[150px] object-cover flex-shrink-0"
+            />
           ))}
         </div>
       </div>
 
-      <div className="flex gap-2 justify-center mt-2">
+      <div className="flex gap-2 justify-center">
         {images.map((_, i) => (
           <button
             key={i}
