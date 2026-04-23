@@ -99,7 +99,7 @@ export default function JobCardList() {
       <Card className="p-4 xl:p-6 grid gap-3 xl:gap-5 border-gray-500 bg-gray-100 !rounded-none xl:!rounded-xl !shadow-floating">
         <CardContent
           sx={{ padding: 0 }}
-          className="text-body-4 xl:text-body-5 font-bold text-gray-1000"
+          className="card-title text-body-4 xl:text-body-5 font-bold text-gray-1000"
         >
           適合前端工程師的好工作
         </CardContent>

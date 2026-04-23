@@ -18,6 +18,20 @@ body {
   display: none;
 }
 
+.card-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: #ee8927;
+  margin-right: 12px;
+}
+
+.eye {
+  transition: transform 0.1s linear;
+}
+
 .swiper {
   width: 100%;
   height: 166px;
