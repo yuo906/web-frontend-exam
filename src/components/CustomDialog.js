@@ -55,7 +55,7 @@ export default function CustomDialog(props) {
           dividers
           className="flex flex-col gap-3 xl:gap-[18px] h-[661px] !px-4 xl:!px-6 xl:!py-5"
         >
-          <div className="flex flex-col xl:flex-row gap-1 xl:gap-2 items-center">
+          <div className="flex flex-col xl:flex-row gap-1 xl:gap-2 items-start xl:items-center">
             <div className="text-body-4 xl:text-body-5 font-bold text-gray-1000">
               {jobdetail.companyName}
             </div>
