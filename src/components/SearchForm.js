@@ -65,15 +65,14 @@ export default function SearchForm(props) {
     <>
       <div className="flex gap-[18px]">
         <FormControl size="medium" variant="outlined" className="w-[647px] ">
+          <InputLabel shrink id="company-name" className="bg-[#fff] !px-1.5">
+            公司名稱
+          </InputLabel>
           <TextField
             id="company-name"
-            label="公司名稱"
             placeholder="請輸入公司名稱"
             value={filters.companyName}
             onChange={handleFilterChange('companyName')}
-            InputLabelProps={{
-              shrink: true,
-            }}
             sx={{
               '& .MuiInputBase-input::placeholder': {
                 color: '#4D4D4D',
@@ -93,9 +92,6 @@ export default function SearchForm(props) {
             displayEmpty
             value={filters.educationLevel}
             onChange={handleFilterChange('educationLevel')}
-            InputLabelProps={{
-              shrink: true,
-            }}
           >
             <MenuItem value="">不限</MenuItem>
             {eduOptions.map((item) => (
