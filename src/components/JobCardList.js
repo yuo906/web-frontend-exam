@@ -10,8 +10,8 @@ import {
   Pagination,
 } from '@mui/material';
 import { PersonOutlined, ImportContacts, CurrencyBitcoin } from '@mui/icons-material';
-import CustomDialog from './CustomDialog';
-import SearchForm from './SearchForm';
+import CustomDialog from './customDialog';
+import SearchForm from './searchForm';
 
 function getPageSize() {
   return window.innerWidth >= 1440 ? 6 : 4;
