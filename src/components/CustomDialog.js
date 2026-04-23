@@ -1,6 +1,6 @@
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material';
 import { useEffect, useState } from 'react';
-import ImageViewer from './imageViewer';
+import ImageViewer from './ImageViewer';
 
 export default function CustomDialog(props) {
   const { onClose, jobId, open } = props;

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import JobCardList from './components/jobCardList';
+import JobCardList from './components/JobCardList';
 
 function getDistance() {
   const isDesktop = window.innerWidth >= 1440;
